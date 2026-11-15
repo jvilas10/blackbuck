@@ -1,0 +1,5 @@
+import {SEO} from './components/SEO'
+import {Routes,Route,ScrollRestoration} from 'react-router-dom'
+import {Header,Footer} from './components/Layout'
+import {Home,About,Services,CaseStudies,Blogs,Career,Contact,CaseStudy} from './pages/Pages'
+export default function App(){return <><SEO/><Header/><main><Routes><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/services" element={<Services/>}/><Route path="/case-studies" element={<CaseStudies/>}/><Route path="/benifizz" element={<CaseStudy slug="benifizz"/>}/><Route path="/balaji-bakery" element={<CaseStudy slug="balaji-bakery"/>}/><Route path="/aarogyavel-oil" element={<CaseStudy slug="aarogyavel-oil"/>}/><Route path="/vardhaman" element={<CaseStudy slug="vardhaman"/>}/><Route path="/be-testee" element={<CaseStudy slug="be-testee"/>}/><Route path="/bliss-bite" element={<CaseStudy slug="bliss-bite"/>}/><Route path="/blogs" element={<Blogs/>}/><Route path="/career" element={<Career/>}/><Route path="/contact" element={<Contact/>}/><Route path="*" element={<Home/>}/></Routes></main><Footer/></>}
